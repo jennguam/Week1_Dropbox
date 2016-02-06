@@ -480,7 +480,7 @@
                                 <rect key="frame" x="54" y="195" width="202" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <segue destination="Az9-Ib-qKt" kind="modal" id="Q01-4D-NRo"/>
+                                    <segue destination="Az9-Ib-qKt" kind="modal" id="LaM-XM-ntr"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -509,6 +509,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <segue destination="GV0-1G-b7Z" kind="modal" id="gXI-O6-xnE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="QzX-qh-Kiu">
+                                <rect key="frame" x="54" y="197" width="206" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="Az9-Ib-qKt" kind="modal" id="ePC-Sz-pb2"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -731,7 +738,8 @@
         <image name="welcome3" width="320" height="568"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="uh9-1p-z5Z"/>
         <segue reference="ez8-HD-KHj"/>
+        <segue reference="kgP-Ic-nHs"/>
+        <segue reference="ePC-Sz-pb2"/>
     </inferredMetricsTieBreakers>
 </document>
