@@ -93,42 +93,6 @@
             </objects>
             <point key="canvasLocation" x="4039" y="822"/>
         </scene>
-        <!--Settings-->
-        <scene sceneID="ubD-Bx-ok7">
-            <objects>
-                <viewController id="67a-1e-cN7" customClass="SettingsScrollViewController" customModule="Week1_Dropbox" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="V4a-FZ-A9K" customClass="SCNView">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="850"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="fnj-dH-JCx">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="800"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="LAR-pR-7v7">
-                                        <rect key="frame" x="0.0" y="723" width="320" height="39"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </button>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="settings" id="Qs9-OX-sft">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="831"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                    </imageView>
-                                </subviews>
-                            </scrollView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Settings" image="settings_tab" id="oKW-ac-aub"/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="850"/>
-                    <connections>
-                        <outlet property="existingUserSettingsScrollView" destination="fnj-dH-JCx" id="T8V-fD-FGt"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vxA-ar-xso" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2566" y="2710"/>
-        </scene>
         <!--Files-->
         <scene sceneID="nLE-wv-4ye">
             <objects>
@@ -169,7 +133,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yHd-xo-f6H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3251" y="1758"/>
+            <point key="canvasLocation" x="3235" y="2014"/>
         </scene>
         <!--Favorites-->
         <scene sceneID="67D-gP-kEH">
@@ -205,12 +169,12 @@
                         <segue destination="3Ks-cs-SU8" kind="relationship" relationship="viewControllers" id="54f-nu-spK"/>
                         <segue destination="Btn-pt-kU8" kind="relationship" relationship="viewControllers" id="cPH-mI-5am"/>
                         <segue destination="oFE-V5-XK9" kind="relationship" relationship="viewControllers" id="Mm8-lP-3KJ"/>
-                        <segue destination="67a-1e-cN7" kind="relationship" relationship="viewControllers" id="ZG5-4V-T0X"/>
+                        <segue destination="bMp-54-sFX" kind="relationship" relationship="viewControllers" id="qKw-s5-FdX"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hkb-YB-q2r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2711" y="1750"/>
+            <point key="canvasLocation" x="2695" y="2006"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="aMT-rr-o7t">
@@ -455,7 +419,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dl9-hp-M2v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1469" y="1752"/>
+            <point key="canvasLocation" x="1453" y="2008"/>
         </scene>
         <!--Dropbox-->
         <scene sceneID="nOi-Vp-pdl">
@@ -490,7 +454,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pJU-3z-4fL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1866" y="1750"/>
+            <point key="canvasLocation" x="1850" y="2006"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="3dJ-AB-ckJ">
@@ -524,7 +488,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uSr-uO-1By" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2261" y="1749"/>
+            <point key="canvasLocation" x="2245" y="2005"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ZKA-DD-JID">
@@ -545,13 +509,20 @@
                                     <segue destination="dpm-y1-PJB" kind="modal" id="uh9-1p-z5Z"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1Fb-Kc-bXg">
+                                <rect key="frame" x="9" y="519" width="302" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="Ink-Su-qlw" kind="modal" id="LQS-h8-m1h"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tMG-kq-eVz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2089" y="2463"/>
+            <point key="canvasLocation" x="2073" y="2719"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rIL-zX-M3a">
@@ -589,7 +560,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cTi-0R-Olf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="887" y="1793"/>
+            <point key="canvasLocation" x="871" y="2049"/>
         </scene>
         <!--Settings-->
         <scene sceneID="Fes-CK-fxf">
@@ -606,6 +577,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TYL-So-mup">
                                         <rect key="frame" x="0.0" y="723" width="320" height="39"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <segue destination="bgL-nm-wlS" kind="modal" id="v1d-VG-Qj4"/>
+                                        </connections>
                                     </button>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="settings" id="mTz-l0-jxg" customClass="SettingsScroll">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="831"/>
@@ -625,7 +599,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Va-7u-BSJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5102" y="1715"/>
+            <point key="canvasLocation" x="4567" y="1881"/>
         </scene>
         <!--Files-->
         <scene sceneID="1Ec-Hi-JRS">
@@ -646,7 +620,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C1M-iF-oYS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3396" y="2577"/>
+            <point key="canvasLocation" x="3380" y="2833"/>
         </scene>
         <!--Photos-->
         <scene sceneID="IjV-Ym-brs">
@@ -688,7 +662,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wLJ-ef-VXj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2978" y="2577"/>
+            <point key="canvasLocation" x="2962" y="2833"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Sbu-G4-AVW">
@@ -709,6 +683,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SAW-D1-OFi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4895" y="816"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="dFu-0c-dho">
+            <objects>
+                <viewController id="bMp-54-sFX" customClass="SettingsScrollViewController" customModule="Week1_Dropbox" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="acR-tX-nxR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="850"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="RH8-rl-aFl">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="800"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qAo-Du-FuO">
+                                        <rect key="frame" x="0.0" y="723" width="320" height="39"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </button>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="settings" id="CSl-Lk-BHJ" customClass="SettingsScroll">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="831"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="settings_tab" id="rcy-wE-p2q"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="850"/>
+                    <connections>
+                        <outlet property="settingsScrollView" destination="RH8-rl-aFl" id="wNu-oU-03I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WaI-Xx-Lc6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2590" y="2947"/>
         </scene>
     </scenes>
     <resources>
@@ -739,7 +749,9 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ez8-HD-KHj"/>
-        <segue reference="kgP-Ic-nHs"/>
+        <segue reference="v1d-VG-Qj4"/>
+        <segue reference="LQS-h8-m1h"/>
         <segue reference="ePC-Sz-pb2"/>
+        <segue reference="uh9-1p-z5Z"/>
     </inferredMetricsTieBreakers>
 </document>

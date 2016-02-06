@@ -10,13 +10,12 @@ import UIKit
 
 class SettingsScrollViewController: UIViewController {
 
-    @IBOutlet weak var existingUserSettingsScrollView: UIScrollView!
     @IBOutlet weak var settingsScrollView: UIScrollView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        existingUserSettingsScrollView.contentSize = CGSize(width: 320, height: 850)
-        settingsScrollView.contentSize = CGSize(width: 320, height: 850)
+        
+        settingsScrollView.contentSize = CGSize(width: 320, height: 1100)
         // Do any additional setup after loading the view.
     }
 
