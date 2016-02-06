@@ -12,6 +12,10 @@
 		AE81E38D1C648C1600BB3DEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE81E38B1C648C1600BB3DEC /* Main.storyboard */; };
 		AE81E38F1C648C1600BB3DEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE81E38E1C648C1600BB3DEC /* Assets.xcassets */; };
 		AE81E3921C648C1600BB3DEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE81E3901C648C1600BB3DEC /* LaunchScreen.storyboard */; };
+		AE81E39C1C649E5A00BB3DEC /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE81E39B1C649E5A00BB3DEC /* CreateAccountViewController.swift */; };
+		AEB2F4261C64A23C00391D29 /* CreateNewAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB2F4251C64A23C00391D29 /* CreateNewAccountViewController.swift */; };
+		AEB2F4281C64A27D00391D29 /* SignInRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB2F4271C64A27D00391D29 /* SignInRootViewController.swift */; };
+		AEB2F42A1C64A29500391D29 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB2F4291C64A29500391D29 /* SignInViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		AE81E38E1C648C1600BB3DEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE81E3911C648C1600BB3DEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE81E3931C648C1600BB3DEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE81E39B1C649E5A00BB3DEC /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		AEB2F4251C64A23C00391D29 /* CreateNewAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewAccountViewController.swift; sourceTree = "<group>"; };
+		AEB2F4271C64A27D00391D29 /* SignInRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInRootViewController.swift; sourceTree = "<group>"; };
+		AEB2F4291C64A29500391D29 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +65,10 @@
 				AE81E3871C648C1600BB3DEC /* AppDelegate.swift */,
 				AE81E3891C648C1600BB3DEC /* ViewController.swift */,
 				AE81E38B1C648C1600BB3DEC /* Main.storyboard */,
+				AEB2F4291C64A29500391D29 /* SignInViewController.swift */,
+				AEB2F4271C64A27D00391D29 /* SignInRootViewController.swift */,
+				AEB2F4251C64A23C00391D29 /* CreateNewAccountViewController.swift */,
+				AE81E39B1C649E5A00BB3DEC /* CreateAccountViewController.swift */,
 				AE81E38E1C648C1600BB3DEC /* Assets.xcassets */,
 				AE81E3901C648C1600BB3DEC /* LaunchScreen.storyboard */,
 				AE81E3931C648C1600BB3DEC /* Info.plist */,
@@ -136,6 +148,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEB2F4281C64A27D00391D29 /* SignInRootViewController.swift in Sources */,
+				AE81E39C1C649E5A00BB3DEC /* CreateAccountViewController.swift in Sources */,
+				AEB2F42A1C64A29500391D29 /* SignInViewController.swift in Sources */,
+				AEB2F4261C64A23C00391D29 /* CreateNewAccountViewController.swift in Sources */,
 				AE81E38A1C648C1600BB3DEC /* ViewController.swift in Sources */,
 				AE81E3881C648C1600BB3DEC /* AppDelegate.swift in Sources */,
 			);
@@ -287,6 +303,7 @@
 				AE81E3981C648C1600BB3DEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
