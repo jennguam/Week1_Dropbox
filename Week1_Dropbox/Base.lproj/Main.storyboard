@@ -310,6 +310,13 @@
                                     <segue destination="Ink-Su-qlw" kind="modal" id="4Zv-Wl-wBO"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="OiD-yR-58s">
+                                <rect key="frame" x="0.0" y="472" width="320" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="Zd3-y1-4da" kind="modal" id="9fL-39-x0Y"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -325,7 +332,7 @@
         <!--New Account-->
         <scene sceneID="sqK-0s-LBs">
             <objects>
-                <viewController id="Zd3-y1-4da" customClass="CreateNewAccountViewController" customModule="Week1_Dropbox" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Zd3-y1-4da" customClass="CreateAccountFormViewController" customModule="Week1_Dropbox" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="a9b-9T-6w3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -335,16 +342,58 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="w36-nS-MjC">
-                                <rect key="frame" x="0.0" y="74" width="320" height="249"/>
+                                <rect key="frame" x="0.0" y="302" width="320" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <segue destination="Vzr-3F-DMP" kind="modal" animates="NO" id="Uie-LP-u5T"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" id="vx1-2K-bCN" userLabel="fieldParentView">
+                                <rect key="frame" x="0.0" y="80" width="320" height="176"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="John" textAlignment="natural" minimumFontSize="17" id="Fov-Dc-nLj">
+                                        <rect key="frame" x="112" y="8" width="200" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="namePhonePad"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" id="hdu-mx-ByZ">
+                                        <rect key="frame" x="112" y="91" width="200" height="39"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Required" textAlignment="natural" minimumFontSize="17" id="D5s-eD-GU8">
+                                        <rect key="frame" x="112" y="132" width="200" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Appleseed" textAlignment="natural" minimumFontSize="17" id="69m-xs-gE7">
+                                        <rect key="frame" x="112" y="46" width="200" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </view>
+                            <view contentMode="scaleToFill" id="NGe-1B-rol">
+                                <rect key="frame" x="0.0" y="349" width="320" height="219"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.92549019607843142" green="0.94117647058823528" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="New Account" id="nbu-j0-rVl"/>
+                    <connections>
+                        <outlet property="fieldParentView" destination="vx1-2K-bCN" id="BZC-XO-Dvm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EA6-d9-Vie" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -416,6 +465,20 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gHE-Rh-Sqq">
+                                <rect key="frame" x="0.0" y="425" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="Ink-Su-qlw" kind="modal" id="TgW-nc-KFg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="YB5-9m-sqP">
+                                <rect key="frame" x="0.0" y="468" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="Zd3-y1-4da" kind="modal" id="bcH-71-3sy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -856,10 +919,11 @@
         <image name="welcome3" width="320" height="568"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ez8-HD-KHj"/>
-        <segue reference="4Zv-Wl-wBO"/>
-        <segue reference="3Ro-uu-Y0G"/>
         <segue reference="uh9-1p-z5Z"/>
         <segue reference="ePC-Sz-pb2"/>
+        <segue reference="3Ro-uu-Y0G"/>
+        <segue reference="TgW-nc-KFg"/>
+        <segue reference="bcH-71-3sy"/>
+        <segue reference="ez8-HD-KHj"/>
     </inferredMetricsTieBreakers>
 </document>
