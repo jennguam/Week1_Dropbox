@@ -17,16 +17,32 @@ class CreateAccountFormViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         initialY = fieldParentView.frame.origin.y
-        offset = -50
+        offset = 0
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShow:", name: UIKeyboardWillShowNotification, object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillHide:", name: UIKeyboardWillHideNotification, object: nil)
         // Do any additional setup after loading the view.
     }
 
+//    override func viewDidAppear(animated: Bool) {
+//        super.viewDidAppear(animated)
+//        let gestRec = UITapGestureRecognizer(target: self, action: Selector("handleTap:"))
+//        self.view.addGestureRecognizer(gestRec)
+//    }
+//    
+//    func handleTap(sender: UIView) {
+//        print("LAWLLAWLLAWLLAWL")
+//    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func testTap(sender: AnyObject) {
+        print("testTap")
+        view.endEditing(true)
+    }
+
     
     func keyboardWillShow(notification: NSNotification!) {
         fieldParentView.frame.origin.y = initialY + offset
