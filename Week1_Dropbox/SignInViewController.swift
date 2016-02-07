@@ -37,6 +37,10 @@ class SignInViewController: UIViewController {
         fieldParentView.frame.origin.y = initialY
         
     }
+    @IBAction func onTap(sender: AnyObject) {
+        view.endEditing(true)
+        print("tappitytap")
+    }
 
 
     /*
