@@ -17,6 +17,8 @@
 		AEB2F4281C64A27D00391D29 /* SignInRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB2F4271C64A27D00391D29 /* SignInRootViewController.swift */; };
 		AEB2F42A1C64A29500391D29 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB2F4291C64A29500391D29 /* SignInViewController.swift */; };
 		AEB2F42C1C65F3F300391D29 /* SettingsScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB2F42B1C65F3F300391D29 /* SettingsScrollViewController.swift */; };
+		AEB2F42E1C6609BE00391D29 /* GettingStartedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB2F42D1C6609BE00391D29 /* GettingStartedController.swift */; };
+		AEB2F4301C66C2F300391D29 /* FavoriteScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB2F42F1C66C2F300391D29 /* FavoriteScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		AEB2F4271C64A27D00391D29 /* SignInRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInRootViewController.swift; sourceTree = "<group>"; };
 		AEB2F4291C64A29500391D29 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		AEB2F42B1C65F3F300391D29 /* SettingsScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsScrollViewController.swift; sourceTree = "<group>"; };
+		AEB2F42D1C6609BE00391D29 /* GettingStartedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GettingStartedController.swift; sourceTree = "<group>"; };
+		AEB2F42F1C66C2F300391D29 /* FavoriteScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FavoriteScreenViewController.swift; path = ../FavoriteScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,9 +68,11 @@
 		AE81E3861C648C1600BB3DEC /* Week1_Dropbox */ = {
 			isa = PBXGroup;
 			children = (
+				AEB2F42F1C66C2F300391D29 /* FavoriteScreenViewController.swift */,
 				AE81E3871C648C1600BB3DEC /* AppDelegate.swift */,
 				AE81E3891C648C1600BB3DEC /* ViewController.swift */,
 				AE81E38B1C648C1600BB3DEC /* Main.storyboard */,
+				AEB2F42D1C6609BE00391D29 /* GettingStartedController.swift */,
 				AEB2F42B1C65F3F300391D29 /* SettingsScrollViewController.swift */,
 				AEB2F4291C64A29500391D29 /* SignInViewController.swift */,
 				AEB2F4271C64A27D00391D29 /* SignInRootViewController.swift */,
@@ -157,7 +163,9 @@
 				AEB2F4261C64A23C00391D29 /* CreateNewAccountViewController.swift in Sources */,
 				AEB2F42C1C65F3F300391D29 /* SettingsScrollViewController.swift in Sources */,
 				AE81E38A1C648C1600BB3DEC /* ViewController.swift in Sources */,
+				AEB2F42E1C6609BE00391D29 /* GettingStartedController.swift in Sources */,
 				AE81E3881C648C1600BB3DEC /* AppDelegate.swift in Sources */,
+				AEB2F4301C66C2F300391D29 /* FavoriteScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
