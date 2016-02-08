@@ -333,14 +333,11 @@
                                 <color key="backgroundColor" red="0.92549019607843142" green="0.94117647058823528" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zKp-d6-bnF">
-                                <rect key="frame" x="250" y="28" width="68" height="33"/>
+                                <rect key="frame" x="251" y="28" width="68" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.95686274509803926" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Create"/>
-                                <connections>
-                                    <segue destination="TZk-ot-h8b" kind="modal" id="P0A-Oj-BYp"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -354,6 +351,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="Create"/>
+                                <connections>
+                                    <segue destination="TZk-ot-h8b" kind="modal" id="WE2-sA-sbB"/>
+                                </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
@@ -370,7 +370,7 @@
             </objects>
             <point key="canvasLocation" x="1932" y="1050"/>
         </scene>
-        <!--Hello-->
+        <!--Welcome-->
         <scene sceneID="eR2-IA-XUV">
             <objects>
                 <viewController id="arX-hU-o5C" customClass="SignInRootViewController" customModule="Week1_Dropbox" customModuleProvider="target" sceneMemberID="viewController">
@@ -378,10 +378,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logged_out" id="fXe-QG-kah">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gHE-Rh-Sqq">
                                 <rect key="frame" x="0.0" y="425" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -396,12 +392,16 @@
                                     <segue destination="Zd3-y1-4da" kind="modal" id="bcH-71-3sy"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logged_out" id="fXe-QG-kah">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Hello" id="JPm-XU-Uoc"/>
+                    <navigationItem key="navigationItem" title="Welcome" id="JPm-XU-Uoc"/>
                     <connections>
-                        <segue destination="Ink-Su-qlw" kind="push" identifier="SignInSegue" id="CeB-ws-Grx"/>
+                        <segue destination="Ink-Su-qlw" kind="push" identifier="SignInSegue" id="t7I-u8-Csw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dl9-hp-M2v" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -435,6 +435,16 @@
                                     <segue destination="Az9-Ib-qKt" kind="modal" id="LaM-XM-ntr"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="LdN-Qm-3J4">
+                                <rect key="frame" x="257" y="27" width="56" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Sign In"/>
+                                <connections>
+                                    <segue destination="GV0-1G-b7Z" kind="modal" id="z7H-Go-aep"/>
+                                </connections>
+                            </button>
                             <view contentMode="scaleToFill" id="ihJ-JO-df8" userLabel="fieldParentView">
                                 <rect key="frame" x="112" y="97" width="208" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -460,16 +470,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.92549019607843142" green="0.94117647058823528" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="PFP-cU-PEW">
-                                <rect key="frame" x="250" y="27" width="68" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.95686274510000002" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Sign In"/>
-                                <connections>
-                                    <segue destination="GV0-1G-b7Z" kind="modal" id="jsk-Hy-sgd"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -549,7 +549,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="arX-hU-o5C" kind="relationship" relationship="rootViewController" id="LGB-Js-drW"/>
+                        <segue destination="arX-hU-o5C" kind="relationship" relationship="rootViewController" id="iD6-32-TFq"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cTi-0R-Olf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -838,10 +838,10 @@
         <image name="welcome3" width="320" height="568"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="4Zv-Wl-wBO"/>
+        <segue reference="t7I-u8-Csw"/>
+        <segue reference="3Ro-uu-Y0G"/>
+        <segue reference="bcH-71-3sy"/>
+        <segue reference="WE2-sA-sbB"/>
         <segue reference="0t8-Cq-X2W"/>
-        <segue reference="RLD-vg-eDq"/>
-        <segue reference="Et1-eN-j3a"/>
-        <segue reference="P0A-Oj-BYp"/>
     </inferredMetricsTieBreakers>
 </document>
