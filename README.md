@@ -8,4 +8,4 @@ Which required and optional stories have you completed?
 
 All required, and All Optional
 
-![alt tag](https://raw.github.com/jennguam/Week1_Dropbox/master/Dropbox_GIFWalktrough.gifh.gif)
+![alt tag](https://raw.github.com/jennguam/Week1_Dropbox/master/Dropbox_GIFWalktrough.gif)
