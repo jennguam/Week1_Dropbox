@@ -19,6 +19,9 @@
 		AEB2F42E1C6609BE00391D29 /* GettingStartedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB2F42D1C6609BE00391D29 /* GettingStartedController.swift */; };
 		AEB2F4301C66C2F300391D29 /* FavoriteScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB2F42F1C66C2F300391D29 /* FavoriteScreenViewController.swift */; };
 		AEB2F43B1C67D64B00391D29 /* CreateAccountFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB2F43A1C67D64B00391D29 /* CreateAccountFormViewController.swift */; };
+		AEB2F43D1C68078A00391D29 /* Welcome1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB2F43C1C68078A00391D29 /* Welcome1ViewController.swift */; };
+		AEB2F43F1C680E1800391D29 /* Welcome2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB2F43E1C680E1800391D29 /* Welcome2ViewController.swift */; };
+		AEB2F4411C680E4700391D29 /* Welcome3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB2F4401C680E4600391D29 /* Welcome3ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		AEB2F42D1C6609BE00391D29 /* GettingStartedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GettingStartedController.swift; sourceTree = "<group>"; };
 		AEB2F42F1C66C2F300391D29 /* FavoriteScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FavoriteScreenViewController.swift; path = ../FavoriteScreenViewController.swift; sourceTree = "<group>"; };
 		AEB2F43A1C67D64B00391D29 /* CreateAccountFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountFormViewController.swift; sourceTree = "<group>"; };
+		AEB2F43C1C68078A00391D29 /* Welcome1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Welcome1ViewController.swift; sourceTree = "<group>"; };
+		AEB2F43E1C680E1800391D29 /* Welcome2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Welcome2ViewController.swift; sourceTree = "<group>"; };
+		AEB2F4401C680E4600391D29 /* Welcome3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Welcome3ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,9 @@
 				AE81E3871C648C1600BB3DEC /* AppDelegate.swift */,
 				AE81E3891C648C1600BB3DEC /* ViewController.swift */,
 				AE81E38B1C648C1600BB3DEC /* Main.storyboard */,
+				AEB2F4401C680E4600391D29 /* Welcome3ViewController.swift */,
+				AEB2F43E1C680E1800391D29 /* Welcome2ViewController.swift */,
+				AEB2F43C1C68078A00391D29 /* Welcome1ViewController.swift */,
 				AEB2F43A1C67D64B00391D29 /* CreateAccountFormViewController.swift */,
 				AEB2F42D1C6609BE00391D29 /* GettingStartedController.swift */,
 				AEB2F42B1C65F3F300391D29 /* SettingsScrollViewController.swift */,
@@ -158,12 +167,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEB2F4281C64A27D00391D29 /* SignInRootViewController.swift in Sources */,
+				AEB2F4411C680E4700391D29 /* Welcome3ViewController.swift in Sources */,
 				AE81E39C1C649E5A00BB3DEC /* CreateAccountViewController.swift in Sources */,
 				AEB2F43B1C67D64B00391D29 /* CreateAccountFormViewController.swift in Sources */,
 				AEB2F42A1C64A29500391D29 /* SignInViewController.swift in Sources */,
 				AEB2F42C1C65F3F300391D29 /* SettingsScrollViewController.swift in Sources */,
 				AE81E38A1C648C1600BB3DEC /* ViewController.swift in Sources */,
+				AEB2F43F1C680E1800391D29 /* Welcome2ViewController.swift in Sources */,
 				AEB2F42E1C6609BE00391D29 /* GettingStartedController.swift in Sources */,
+				AEB2F43D1C68078A00391D29 /* Welcome1ViewController.swift in Sources */,
 				AE81E3881C648C1600BB3DEC /* AppDelegate.swift in Sources */,
 				AEB2F4301C66C2F300391D29 /* FavoriteScreenViewController.swift in Sources */,
 			);

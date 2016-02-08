@@ -149,10 +149,10 @@
             </objects>
             <point key="canvasLocation" x="3664" y="881"/>
         </scene>
-        <!--View Controller-->
+        <!--Welcome1 View Controller-->
         <scene sceneID="KXa-7q-h3u">
             <objects>
-                <viewController id="kLR-cm-4Hf" sceneMemberID="viewController">
+                <viewController id="kLR-cm-4Hf" customClass="Welcome1ViewController" customModule="Week1_Dropbox" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8IM-a3-ddN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -160,26 +160,23 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome1" id="J3e-5a-xCW">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6eU-Nd-l01">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <segue destination="Zgh-dw-C4n" kind="modal" modalTransitionStyle="crossDissolve" id="fSi-rx-f1B"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <segue destination="Zgh-dw-C4n" kind="modal" identifier="firstSegue" modalTransitionStyle="flipHorizontal" id="qLl-Ks-7ij"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5qa-b0-OL6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-118" y="1068"/>
+            <point key="canvasLocation" x="-232" y="1063"/>
         </scene>
-        <!--View Controller-->
+        <!--Welcome2 View Controller-->
         <scene sceneID="ITM-kB-9si">
             <objects>
-                <viewController id="Zgh-dw-C4n" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="partialCurl" id="Zgh-dw-C4n" customClass="Welcome2ViewController" customModule="Week1_Dropbox" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kQc-Gq-Q9k">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -188,25 +185,22 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="RED-ca-FSW">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <segue destination="bgL-nm-wlS" kind="modal" modalTransitionStyle="crossDissolve" id="H36-bu-gX3"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <segue destination="bgL-nm-wlS" kind="modal" identifier="secondtoThirdSegue" modalTransitionStyle="flipHorizontal" id="tyo-Mt-OZw"/>
+                        <segue destination="kLR-cm-4Hf" kind="modal" identifier="secondtofirstSegue" modalTransitionStyle="flipHorizontal" id="BFW-Wn-gd2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yy9-u0-FKJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="267" y="1068"/>
         </scene>
-        <!--View Controller-->
+        <!--Welcome3 View Controller-->
         <scene sceneID="1q3-qi-HsO">
             <objects>
-                <viewController id="bgL-nm-wlS" sceneMemberID="viewController">
+                <viewController id="bgL-nm-wlS" customClass="Welcome3ViewController" customModule="Week1_Dropbox" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8VC-Yy-n2s">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -232,12 +226,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <segue destination="Zgh-dw-C4n" kind="modal" identifier="thirdtosecondSegue" modalTransitionStyle="flipHorizontal" id="0t8-Cq-X2W"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vV0-Cw-UzL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="655" y="1068"/>
+            <point key="canvasLocation" x="744" y="1068"/>
         </scene>
-        <!--Hello-->
+        <!--Welcome-->
         <scene sceneID="iZE-F5-IQB">
             <objects>
                 <viewController id="yth-6r-A8x" customClass="CreateAccountViewController" customModule="Week1_Dropbox" customModuleProvider="target" sceneMemberID="viewController">
@@ -266,7 +263,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Hello" id="rBe-OW-66V"/>
+                    <navigationItem key="navigationItem" title="Welcome" id="rBe-OW-66V"/>
                     <connections>
                         <segue destination="Zd3-y1-4da" kind="push" identifier="NewAcctSegue" animates="NO" id="Et1-eN-j3a"/>
                     </connections>
@@ -335,6 +332,16 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.92549019607843142" green="0.94117647058823528" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zKp-d6-bnF">
+                                <rect key="frame" x="250" y="28" width="68" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274509803926" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Create"/>
+                                <connections>
+                                    <segue destination="TZk-ot-h8b" kind="modal" id="P0A-Oj-BYp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -347,9 +354,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="Create"/>
-                                <connections>
-                                    <segue destination="TZk-ot-h8b" kind="modal" id="KgP-n8-p1e"/>
-                                </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
@@ -364,7 +368,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1891" y="1050"/>
+            <point key="canvasLocation" x="1932" y="1050"/>
         </scene>
         <!--Hello-->
         <scene sceneID="eR2-IA-XUV">
@@ -451,21 +455,21 @@
                                     </textField>
                                 </subviews>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="BQc-o6-Jh5">
-                                <rect key="frame" x="251" y="28" width="60" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.95686274509803926" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Sign In"/>
-                                <connections>
-                                    <segue destination="Az9-Ib-qKt" kind="modal" id="acx-F0-PbQ"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" id="Mii-pY-cd2">
                                 <rect key="frame" x="0.0" y="352" width="320" height="216"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.92549019607843142" green="0.94117647058823528" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="PFP-cU-PEW">
+                                <rect key="frame" x="250" y="27" width="68" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Sign In"/>
+                                <connections>
+                                    <segue destination="GV0-1G-b7Z" kind="modal" id="jsk-Hy-sgd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -512,7 +516,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tMG-kq-eVz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2073" y="2719"/>
+            <point key="canvasLocation" x="2103" y="2865"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rIL-zX-M3a">
@@ -531,7 +535,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0RB-1P-SFY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1070" y="1068"/>
+            <point key="canvasLocation" x="1112" y="1068"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="e7a-Rn-0vk">
@@ -599,10 +603,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="existing_files" id="A5e-eq-8U2">
-                                <rect key="frame" x="0.0" y="48" width="320" height="454"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="erP-ow-57Q">
                                 <rect key="frame" x="0.0" y="246" width="320" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -610,6 +610,10 @@
                                     <segue destination="Q0O-NS-CTj" kind="push" id="6GE-tk-Plb"/>
                                 </connections>
                             </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="existing_files" id="A5e-eq-8U2">
+                                <rect key="frame" x="0.0" y="72" width="320" height="454"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -834,10 +838,10 @@
         <image name="welcome3" width="320" height="568"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="LaM-XM-ntr"/>
-        <segue reference="LQS-h8-m1h"/>
-        <segue reference="CCM-aM-QIN"/>
-        <segue reference="KgP-n8-p1e"/>
-        <segue reference="bcH-71-3sy"/>
+        <segue reference="4Zv-Wl-wBO"/>
+        <segue reference="0t8-Cq-X2W"/>
+        <segue reference="RLD-vg-eDq"/>
+        <segue reference="Et1-eN-j3a"/>
+        <segue reference="P0A-Oj-BYp"/>
     </inferredMetricsTieBreakers>
 </document>
